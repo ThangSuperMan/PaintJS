@@ -1,0 +1,69 @@
+@import "reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400&display=swap');
+body {
+    background-color: #f6f9fc;
+    font-family: 'Poppins', sans-serif;
+    padding: 50px 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.canvas {
+    display: block;
+    width: 500px;
+    height: 500px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    padding-top: 50px;
+    margin: 0 auto; 
+}
+
+.control {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.control .control__btns {
+    margin-bottom: 30px;
+}
+
+.control__btns button {
+    all: unset;
+    background-color:white;
+    padding: 5px 0px;
+    width: 80px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: rgba(0, 0, 0, 0.8);
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 12px;
+}
+
+.control__btns button:active {
+    transform: scale(0.98);
+}
+
+.control__colors .control__color {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.control .control__range {
+    margin-bottom: 10px;
+}
+
+.control__eraser img {
+    width: 100%;
+    height: 100px;
+}
